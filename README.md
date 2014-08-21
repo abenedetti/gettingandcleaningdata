@@ -84,10 +84,10 @@ and unzipped **in the same folder of the *analysis.R* file**.
 
 + By running the "analysis.R" script, the "user" will create:
 
-	+ a tidy data set (`full_DF`)
+	+ a tidy data frame (`full_DF`)
 	+ a "filtered" data frame (`mean_sd_DF`), with means and standard deviation
-	+ an output file named ***agg_mean_DF.txt*** with the aggregated data ()
-	+ an output file named ***CodeBook.md*** with the details on the data frame fields.
+	+ an output file named ***agg_mean_DF.txt*** with the aggregated data
+	+ an output file named ***CodeBook.md*** with the details on the data frame fields
 
 
 Roadmap
@@ -349,7 +349,7 @@ By reading the requirement we understood that "_each variable_" have to be taken
 the data by mean. It is not explicitly stated that we should "pre-select" some variables and then aggregate and computing the mean.
 
 We computed the `aggregate()` function by using first the 561st variables (the "features")and after of the `full_DF`, as well as 
-#the "activityLABEL" and "volunteerID" fields.
+the "activityLABEL" and "volunteerID" fields.
 
 The piece of code that implement that is:
 
