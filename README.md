@@ -364,7 +364,7 @@ The piece of code that implement that is:
 Finally we exported the data in an external text file using the `write.table()` function:
 
 	#export the data on text file
-	write.table(agg_mean_DF,"agg_mean_DF.txt",row.name=FALSE)
+	write.table(agg_mean_DF,"agg_mean_DF.txt",row.names=FALSE)
 
 The resulting data frame `agg_mean_DF` has 180 rows and 563 columns.
 	

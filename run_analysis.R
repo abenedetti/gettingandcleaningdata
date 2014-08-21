@@ -142,7 +142,7 @@ agg_mean_DF <- aggregate(full_DF[,(1:561)],
 detach(full_DF)
 
 #export the data on text file
-write.table(agg_mean_DF,"agg_mean_DF.txt",row.name=FALSE)
+write.table(agg_mean_DF,"agg_mean_DF.txt",row.names=FALSE)
 
 #dim(agg_mean_DF)
 
