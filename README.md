@@ -165,7 +165,7 @@ as stated in the code of the _#preload to find column classes_ section:
 _N.B: on the `run_analysis.R` file there are also a few lines of code to check the dimensions of the freshly loaded variables._
 
 Once the files are loaded in their data frames we can merge them by using the `cbind()` function.
-To easily manage the 561 columns of the _X\_&lt;type&gt;.txt_ files against the labels description in the 561 features in the _features.txt_ file, we choose
+To easily manage the 561 columns of the *X\_&lt;type&gt;.txt* files against the labels description in the 561 features in the _features.txt_ file, we choose
 to concatenate the files with the following structure:
 
 first **X\_&lt;type&gt;.txt** then **y\_&lt;type&gt;.txt** and last **subject\_&lt;type&gt;.txt**
@@ -196,7 +196,7 @@ The purpose of this section is to "clean" the resulting data frame obtained in t
 
 ###Substep 2a: Set proper columns names
 
-First we shall name properly the columns of the data frame that consists in 563 column.
+First we shall name properly the columns of the data frame that consists in 563 columns.
 
 From left to right we have: 
 
@@ -260,8 +260,8 @@ Here's a preview:
 
 ###Substep 2b: Add proper names to descriptive variables
 
-The descriptive names are available for the "activityID" column, where for each integer value, we have a corresponding string of the particularly
-activity done by the volunteer. To decode the activity we simply refer to the _activity\_labels.txt_ file.
+The descriptive names are available for the "activityID" column, where for each integer value, we have a corresponding string of the specific
+activity done by the volunteer. To decode the activity we simply refered to the _activity\_labels.txt_ file.
 
 We chose to keep the original value (the one contained in "activityID" column), because it could be useful for further analysis since it's already
 in a integer form. Consequently we only need to add a new column to the `full_DF` data frame: the new column will be named "activityLABEL".
@@ -345,10 +345,10 @@ Step 5: Extract the second work data set (average)
 
 The requirement of this step was to "_create a second, independent tidy data set with the average of each variable for each activity and each subject_". 
 
-By reading the requirement we understood that "_each variable_" have to be taken. Therefore we considered _each variable_ and _then_ and aggregated
+By reading the requirement we understood that "_each variable_" have to be taken. Therefore we considered _each variable_ and _then_ aggregated
 the data by mean. It is not explicitly stated that we should "pre-select" some variables and then aggregate and computing the mean.
 
-We computed the `aggregate()` function by using first the 561st variables (the "features")and after of the `full_DF`, as well as 
+We computed the `aggregate()` function by using first the 561st variables (the "features") and after of the `full_DF`, as well as 
 the "activityLABEL" and "volunteerID" fields.
 
 The piece of code that implement that is:
