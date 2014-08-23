@@ -8,7 +8,7 @@
 #this script.
 
 #In this script several activities are done to manipulate the data collected
-#from the accelerometers of.
+#from the accelerometers of the Samsung Galaxy S smartphone.
 
 #-------------------------------------------------------------------------------
 
