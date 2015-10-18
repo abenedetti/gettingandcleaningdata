@@ -1,4 +1,4 @@
-[![Analytics](https://ga-beacon.appspot.com/UA-67476508-1/phoinike/gettingandcleaningdata)](https://github.com/phoinike/gettingandcleaningdata)
+[![Analytics](https://ga-beacon.appspot.com/UA-67476508-2/gettingandcleaningdata/readme)](https://github.com/igrigorik/ga-beacon)
 
 README.md
 ===
